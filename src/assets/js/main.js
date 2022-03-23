@@ -31,14 +31,14 @@ function insert() {
   var hoursTest = document.getElementById('timeTest').value;
   console.log(nameFunction);  
   console.log(hoursDev);  
-  console.log(hoursTest);  
-  
+  console.log(hoursTest); 
 
   let feature = new Feature(nameFunction, hoursDev, hoursTest);
-
+  
   features.push(feature);
-
-  alert(`Nova Feature: ${feature.getAll()}`);
+  
+  insertFunction(features);
+  alert(`Nova Feature: ${feature.getAll()} + quantidade na lista: ${features.length}`);
 
   // myModal.addEventListener('shown.bs.modal', function () {
   //   myInput.focus()
@@ -54,10 +54,7 @@ class Feature {
   }
 
   getAll() {
-    return `Feature:\n
-    Nome: ${this.nameFunction}\n 
-    Horas de desenvolvimento: ${this.hoursDev}\n
-    Horas de Teste: ${this.hoursTest}
+    return `Feature: Nome: ${this.nameFunction} Horas de desenvolvimento: ${this.hoursDev} Horas de Teste: ${this.hoursTest}
     `;
   }
 }
