@@ -1,7 +1,9 @@
-//import Feature from './functionModel';
+
 
 // Este será o objeto principal no qual você irá se basear para as funções do desafio!
 // Caso haja dúvidas de como prosseguir, favor consultar a sala #js no nosso discord!
+
+i
 let features = [
   {
     feature: "Authentication",
